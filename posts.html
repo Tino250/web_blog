@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Posts</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/logo2.png">
+</head>
+<body>
+  <div id="navbar"></div>
+
+<div class="container">
+  <div class="grid-container">
+
+    <div class="box">
+      <img src="images/placeholder1.png" alt="placeholder">
+      <div class="box-titles"> 
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, facilis!</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="images/placeholder1.png" alt="placeholder">
+      <div class="box-titles"> 
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, facilis!</p>
+        </div>
+    </div>
+
+    <div class="box">
+      <img src="images/placeholder1.png" alt="placeholder">
+      <div class="box-titles"> 
+        <p>Lorem ipsum dolor sisadasdasdasdasdasdsat amet consectetur, adipisicing elit. Voluptas, facilis!</p>
+        </div>
+    </div>
+
+    <div class="box">
+      <img src="images/placeholder1.png" alt="placeholder">
+      <div class="box-titles"> 
+        <p>Lorem ipsum dolor sisadasdasdasdasdasdsat amet consectetur, adipisicing elit. Voluptas, facilis!</p>
+        </div>
+    </div>
+
+    
+    <div class="box">
+      <img src="images/placeholder1.png" alt="placeholder">
+      <div class="box-titles"> 
+        <p>Lorem ipsum dolor sisadasdasdasdasdasdsat amet consectetur, adipisicing elit. Voluptas, facilis!</p>
+        </div>
+    </div>
+
+    
+    <div class="box">
+      <img src="images/placeholder1.png" alt="placeholder">
+      <div class="box-titles"> 
+        <p>Lorem ipsum dolor sisadasdasdasdasdasdsat amet consectetur, adipisicing elit. Voluptas, facilis!</p>
+        </div>
+    </div>
+  
+  </div>
+</div>
+
+
+
+<script>
+  fetch("Components/nav.html")
+  .then(response=>response.text())
+  .then(data=>{
+    document.getElementById("navbar").innerHTML=data;
+
+  })
+  .catch(error=>{
+    console.log(error);
+  })
+</script>
+</body>
+</html>
