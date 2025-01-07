@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/logo2.png">
+</head>
+<body class="loginpage-body">
+
+
+  <div id="navbar"></div>
+
+
+<form class="login-form">
+  <h1>Login</h1>
+  
+  <div class="email-container">
+    <label for="email">Enter your email here</label>
+    <input  type="email" name="email" id="email">  
+  </div>
+
+  <div class="password-container">
+    <label for="password">Enter your password here</label>
+    <input type="password" name="passwsord" id="password">
+  </div>
+
+
+  <input class="submit" type="submit" value="Submit" name="submit"> 
+</form>
+
+
+<script>
+  fetch("Components/nav.html")
+  .then(response=>response.text())
+  .then(data=>{
+    document.getElementById("navbar").innerHTML=data
+  })
+  .catch(error=>{
+    console.log(error)
+  })
+</script>
+</body>
+</html>
